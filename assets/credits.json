@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "01-hero",
+    "file": "01-hero.jpg",
+    "term": "Acantilado del Asperillo",
+    "title": "File:El Asperillo.jpg",
+    "artist": "José Luis Filpo Cabana",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:El_Asperillo.jpg"
+  },
+  {
+    "slug": "02-cuestamaneli",
+    "file": "02-cuestamaneli.jpg",
+    "term": "Cuesta Maneli",
+    "title": "File:Cuesta de Maneli R02.jpg",
+    "artist": "Marc Ryckaert",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cuesta_de_Maneli_R02.jpg"
+  },
+  {
+    "slug": "03-rompido",
+    "file": "03-rompido.jpg",
+    "term": "Flecha del Rompido",
+    "title": "File:Paraje Natural Marismas del Río Piedras y Flecha del Rompido.jpg",
+    "artist": "Daniel Toscano Díaz",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paraje_Natural_Marismas_del_R%C3%ADo_Piedras_y_Flecha_del_Rompido.jpg"
+  },
+  {
+    "slug": "04-carabelas",
+    "file": "04-carabelas.jpg",
+    "term": "Muelle de las Carabelas",
+    "title": "File:Muelle de las Carabelas - 007 (30412899430).jpg",
+    "artist": "Luis Rogelio HM",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Muelle_de_las_Carabelas_-_007_(30412899430).jpg"
+  },
+  {
+    "slug": "05-donana",
+    "file": "05-donana.jpg",
+    "term": "Doñana marismas",
+    "title": "File:Sequia Marismas de Doñana.jpg",
+    "artist": "Mikirabba",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sequia_Marismas_de_Do%C3%B1ana.jpg"
+  },
+  {
+    "slug": "06-riotinto",
+    "file": "06-riotinto.jpg",
+    "term": "Río Tinto Huelva river",
+    "title": "File:Río Tinto, cauce 13.jpg",
+    "artist": "LBM1948",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Tinto,_cauce_13.jpg"
+  },
+  {
+    "slug": "07-gruta",
+    "file": "07-gruta.jpg",
+    "term": "Gruta de las Maravillas",
+    "title": "File:14.10.02 Gruta de las Maravillas.jpg",
+    "artist": "Junta Informa",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:14.10.02_Gruta_de_las_Maravillas.jpg"
+  },
+  {
+    "slug": "08-ciudadrodrigo",
+    "file": "08-ciudadrodrigo.jpg",
+    "term": "Castillo de Ciudad Rodrigo",
+    "title": "File:Torre del Homenaje del Castillo de Enrique II desde la Plaza del Castillo, con barrera de 1507 en primer plano.jpg",
+    "artist": "Mr. Tickle",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Torre_del_Homenaje_del_Castillo_de_Enrique_II_desde_la_Plaza_del_Castillo,_con_barrera_de_1507_en_primer_plano.jpg"
+  },
+  {
+    "slug": "09-salamanca",
+    "file": "09-salamanca.jpg",
+    "term": "Plaza Mayor de Salamanca",
+    "title": "File:4570-Plaza Mayor de Salamanca. (19859546092).jpg",
+    "artist": "Jose Luis Cernadas Iglesias from Coruña, España",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:4570-Plaza_Mayor_de_Salamanca._(19859546092).jpg"
+  },
+  {
+    "slug": "10-sanabria",
+    "file": "10-sanabria.jpg",
+    "term": "Castillo de los Condes de Benavente Puebla de Sanabria",
+    "title": "File:Castillo de los Condes de Benavente. Puebla de Sanabria.jpg",
+    "artist": "José Luis Filpo Cabana",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Castillo_de_los_Condes_de_Benavente._Puebla_de_Sanabria.jpg"
+  },
+  {
+    "slug": "11-estrellas",
+    "file": "11-estrellas.jpg",
+    "term": "Milky Way night sky Spain",
+    "title": "File:360-degree Panorama of the Southern Sky.jpg",
+    "artist": "ESO/H.H. Heyer",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:360-degree_Panorama_of_the_Southern_Sky.jpg"
+  },
+  {
+    "slug": "12-suances",
+    "file": "12-suances.jpg",
+    "term": "Suances Cantabria",
+    "title": "File:Suances (Cantabria).jpg",
+    "artist": "fredpanassac",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Suances_(Cantabria).jpg"
+  }
+]
