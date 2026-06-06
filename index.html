@@ -116,6 +116,46 @@
   .vote{margin-top:30px; font-size:19px; text-align:center; color:#f4ead6}
   .vote a{color:#f4c87a; font-weight:600}
 
+  /* wide option (astro) */
+  .opt.wide{grid-column:1/-1; flex-direction:row}
+  .opt.wide .ph{width:40%; min-height:250px; height:auto}
+  .opt.wide .c{width:60%}
+  .opt .tag.astro{background:#1b2c5a; color:#bcd0ff}
+  .opt .pick{font-family:'Fraunces',serif; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#f4c87a; margin-bottom:6px}
+
+  /* ---------- ASTRONOMÍA ---------- */
+  .astro{position:relative; background:#0a1430; color:#dde5f5; overflow:hidden}
+  .astro .stars{position:absolute; inset:0; background:url('assets/11-estrellas.jpg') center/cover; opacity:.15; filter:saturate(.85)}
+  .astro .stars::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(10,20,48,.8),#0a1430 72%)}
+  .astro>.wrap{position:relative}
+  .astro .eyebrow{color:#f4c87a}
+  .astro h2{color:#fff}
+  .astro .sec-head p{color:#aab6d6}
+  .astro .combo{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:30px 0 10px}
+  .astro .ev{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:20px 22px}
+  .astro .ev .t{font-family:'Fraunces',serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#f4c87a}
+  .astro .ev h3{color:#fff; font-size:24px; margin:6px 0 8px}
+  .astro .ev p{margin:0; color:#cfd8ee; font-size:16px}
+  .planb{background:rgba(244,200,122,.07); border:1px solid rgba(244,200,122,.28); border-radius:18px; padding:26px 26px 12px; margin-top:14px}
+  .planb h3{color:#f4c87a; font-size:25px; margin-bottom:6px}
+  .planb .crit{color:#cfd8ee; margin:6px 0 20px; font-size:16px}
+  .planb .crit b{color:#fff}
+  .steps{display:grid; gap:0}
+  .step{display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:start; padding:16px 0; border-top:1px solid rgba(255,255,255,.1)}
+  .step:first-child{border-top:0}
+  .step .lv{font-family:'Fraunces',serif; font-weight:600; font-size:13px; padding:6px 13px; border-radius:999px; white-space:nowrap}
+  .step.l0 .lv{background:#3a2a14; color:#f0b46a}
+  .step.l1 .lv{background:#123a2d; color:#7fe0b0}
+  .step.l2 .lv{background:#1b2c5a; color:#a9c4ff}
+  .step h4{color:#fff; font-size:19px; margin-bottom:3px}
+  .step p{margin:0; color:#cfd8ee; font-size:15.5px}
+  .step p b{color:#fff}
+  .astro .tips{margin-top:18px; color:#aab6d6; font-size:15px; line-height:1.55}
+  .astro .tips b{color:#f4c87a}
+  .astro .anno-btn{color:#cfd8ee; border-color:rgba(255,255,255,.22)}
+  .astro .anno-btn:hover{color:#fff; border-color:#f4c87a; background:rgba(255,255,255,.05)}
+  .astro .anno-pad{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16)}
+
   /* ---------- RESERVAS ---------- */
   .resv{border-top:1px solid var(--line)}
   .resv .row{display:grid; grid-template-columns:1fr auto auto; gap:18px; align-items:center;
@@ -168,6 +208,11 @@
     .resv .row{grid-template-columns:1fr auto}
     .resv .row .nights{display:none}
     .hero .scroll{display:none}
+    .opt.wide{flex-direction:column}
+    .opt.wide .ph{width:100%; height:200px}
+    .opt.wide .c{width:100%}
+    .astro .combo{grid-template-columns:1fr}
+    .step{grid-template-columns:1fr; gap:6px}
   }
   @media (prefers-reduced-motion:reduce){
     .reveal{opacity:1; transform:none; transition:none}
@@ -399,9 +444,22 @@
             <div class="anno-panel"><div class="anno-inner"><div class="anno-pad"></div></div></div>
           </div>
         </div>
+        <div class="opt reveal wide">
+          <div class="ph"><img src="assets/13-monfrague.jpg" alt="Monfragüe" loading="lazy">
+            <span class="tag astro">Para el astrónomo</span></div>
+          <div class="c">
+            <div class="pick">Opción extra · astroturismo</div>
+            <h3>Parador de Plasencia + Observatorio de Monfragüe</h3>
+            <div class="place">Cáceres · Reserva Starlight</div>
+            <p>Duermes en el parador-convento de Plasencia y, a 35 min, una sesión nocturna guiada en el Observatorio de Monfragüe (cúpula de 4 m, cielo Starlight certificado). La opción hecha para tu afición — a cambio de un día 8 más largo.</p>
+            <div class="km">🚗 Día 8 → Suances: ~5 h · 🌌 sesión hasta la 1:30, con reserva previa</div>
+            <button class="anno-btn" data-term="opt-monfrague"><span class="ico">💬</span> Comentar esta opción</button>
+            <div class="anno-panel"><div class="anno-inner"><div class="anno-pad"></div></div></div>
+          </div>
+        </div>
       </div>
 
-      <p class="vote">👉 Julia, vota tu favorita comentando en su tarjeta (o propón otra). Mi apuesta es <b>Ciudad Rodrigo</b>.</p>
+      <p class="vote">👉 Julia, vota tu favorita comentando en su tarjeta (o propón otra). Mi apuesta es <b>Ciudad Rodrigo</b> — salvo que te tiente la de astronomía.</p>
     </div>
   </section>
 
@@ -431,6 +489,50 @@
       <div class="t"><span class="n">2</span><div><b>Doñana en 4×4</b><span>Ruta norte desde El Rocío · día 5</span></div></div>
       <div class="t"><span class="n">3</span><div><b>Barco a la Flecha del Rompido</b><span>Confirmar horario según marea · día 2</span></div></div>
       <div class="t"><span class="n">4</span><div><b>Gruta de las Maravillas</b><span>Visita guiada en Aracena · día 7</span></div></div>
+    </div>
+  </section>
+
+  <!-- ================= ASTRONOMÍA ================= -->
+  <section class="sec astro">
+    <div class="stars"></div>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">El cielo de agosto · para ti</div>
+        <h2>Eclipse total y Perseidas, el mismo día</h2>
+        <p>El 12 de agosto, ya en Suances, coinciden dos eventos que no se repiten juntos: un eclipse total de Sol al atardecer y, esa misma noche, el pico de las Perseidas con Luna nueva.</p>
+      </div>
+
+      <div class="combo reveal">
+        <div class="ev">
+          <div class="t">☀︎ Atardecer · ~20:26</div>
+          <h3>Eclipse total de Sol</h3>
+          <p>Toda Cantabria está en la franja de totalidad: ~1 min 30 s de noche en pleno día, con el Sol bajísimo (~10°) sobre el mar.</p>
+        </div>
+        <div class="ev">
+          <div class="t">✦ Esa noche · Luna nueva</div>
+          <h3>Perseidas en su pico</h3>
+          <p>Noche del 12 al 13 con Luna nueva (0 %): cielo completamente negro y 60–100 meteoros/hora desde un sitio oscuro. Mejor a partir de medianoche.</p>
+        </div>
+      </div>
+
+      <div class="planb reveal">
+        <h3>Plan B del eclipse</h3>
+        <p class="crit">La costa cantábrica es <b>la zona de España con más riesgo de nubes</b> (solo 30–50 % de cielo despejado). Condición innegociable: <b>horizonte oeste despejado</b>. La estrategia es ser <b>móviles y decidir según la predicción</b> — mirar AEMET y mapas de satélite a 48 h, 24 h y la tarde misma del 12; coche listo, depósito lleno y salir con mucha antelación (habrá tráfico masivo).</p>
+        <div class="steps">
+          <div class="step l0"><span class="lv">Nivel 0</span><div>
+            <h4>Suances, si despeja</h4>
+            <p>Eclipse total <b>sobre el Cantábrico</b>, escénicamente imbatible: el horizonte oeste es mar abierto. Solo si la predicción acompaña.</p></div></div>
+          <div class="step l1"><span class="lv">Nivel 1</span><div>
+            <h4>Sur de Cantabria · ~1 h–1 h 30</h4>
+            <p><b>Valderredible</b> (el Observatorio de Cantabria, páramo de La Lora a 1.080 m), <b>Reinosa/Campoo</b> o el <b>Castillo de Aguilar de Campoo</b>. Mejor cielo y <b>totalidad algo más larga</b> al acercarse a la línea central.</p></div></div>
+          <div class="step l2"><span class="lv">Nivel 2</span><div>
+            <h4>Interior de Burgos / Palencia · ~2 h</h4>
+            <p>Si toda la cornisa amanece cubierta: tierra adentro el cielo sube al <b>50–70 % despejado</b> y la totalidad es más larga (Burgos ~104 s). El plan B "de seguro".</p></div></div>
+        </div>
+        <p class="tips"><b>Imprescindible:</b> gafas de eclipse certificadas (ISO 12312-2) para la fase parcial; en la totalidad, a ojo desnudo. En posición antes de las 19:30. · El <b>Observatorio de Cantabria</b> organiza sesión especial de eclipse y de Perseidas: <a href="https://www.observatorioastronomicocantabria.com/oac/web/observaciones-eclipse" target="_blank" rel="noopener">reservar cuanto antes ↗</a>.</p>
+        <button class="anno-btn" data-term="astronomia"><span class="ico">💬</span> Anotar sobre el plan astronómico</button>
+        <div class="anno-panel"><div class="anno-inner"><div class="anno-pad"></div></div></div>
+      </div>
     </div>
   </section>
 
@@ -507,7 +609,7 @@
     const names={ "01-hero":"Acantilado del Asperillo","02-cuestamaneli":"Cuesta Maneli","03-rompido":"Flecha del Rompido",
       "04-carabelas":"Muelle de las Carabelas","05-donana":"Marismas de Doñana","06-riotinto":"Río Tinto",
       "07-gruta":"Gruta de las Maravillas","08-ciudadrodrigo":"Castillo de Ciudad Rodrigo","09-salamanca":"Plaza Mayor de Salamanca",
-      "10-sanabria":"Puebla de Sanabria","11-estrellas":"Cielo estrellado","12-suances":"Suances"};
+      "10-sanabria":"Puebla de Sanabria","11-estrellas":"Cielo estrellado","12-suances":"Suances","13-monfrague":"Monfragüe"};
     document.getElementById('credits').innerHTML = list.map(c=>{
       const t=names[c.slug]||c.slug;
       return `<div><b>${t}</b> — ${c.artist}, ${c.license} · <a href="${c.source}" target="_blank" rel="noopener">Wikimedia Commons ↗</a></div>`;
