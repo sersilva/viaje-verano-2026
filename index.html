@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Verano 2026 · Huelva → Suances</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#f5ede0; --sand-2:#efe3d1; --ink:#2c2a26; --muted:#6f685c;
+    --teal:#13635e; --teal-d:#0c4744; --gold:#cf9a3b; --rust:#a8431f;
+    --line:#e2d6c2; --card:#fffdf9; --shadow:0 10px 30px rgba(60,45,20,.08);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--sand); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:0 20px}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.15; margin:0}
+  a{color:var(--teal)}
+
+  /* HERO */
+  .hero{
+    position:relative; overflow:hidden; color:#fff; text-align:center;
+    padding:74px 20px 84px;
+    background:
+      radial-gradient(900px 400px at 80% -10%, rgba(207,154,59,.55), transparent 60%),
+      radial-gradient(700px 420px at 5% 110%, rgba(168,67,31,.45), transparent 55%),
+      linear-gradient(160deg,#16726c 0%, #0c4744 60%, #0a3b39 100%);
+  }
+  .hero .sun{position:absolute; top:34px; right:48px; width:64px; height:64px; border-radius:50%;
+    background:radial-gradient(circle at 40% 40%, #ffe9b0, #f3b13a); box-shadow:0 0 60px rgba(243,177,58,.6); opacity:.9}
+  .hero .kicker{letter-spacing:.28em; text-transform:uppercase; font-size:12px; opacity:.85; margin-bottom:14px}
+  .hero h1{font-size:clamp(34px,6vw,58px); color:#fff}
+  .hero h1 em{font-style:italic; color:#ffe1a6}
+  .hero .dates{margin-top:16px; font-size:18px; opacity:.95}
+  .hero .who{margin-top:22px; display:inline-flex; gap:10px; flex-wrap:wrap; justify-content:center}
+  .hero .who span{background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.22);
+    padding:6px 14px; border-radius:999px; font-size:14px}
+
+  /* SECTION */
+  section{padding:52px 0}
+  .eyebrow{letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:var(--rust); font-weight:600; margin-bottom:8px}
+  h2{font-size:clamp(26px,4vw,36px); margin-bottom:6px}
+  .lead{color:var(--muted); max-width:62ch; margin-top:6px}
+
+  /* TWO TRAMOS */
+  .tramos{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:26px}
+  .tramo{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:var(--shadow)}
+  .tramo .tag{display:inline-block; font-size:12px; font-weight:600; padding:4px 10px; border-radius:999px; margin-bottom:10px}
+  .tramo.t1 .tag{background:#e8f3ef; color:var(--teal-d)}
+  .tramo.t2 .tag{background:#f9ecd9; color:#9a6b14}
+  .tramo h3{font-size:21px; margin-bottom:4px}
+  .tramo .sub{color:var(--muted); font-size:14px; margin-bottom:12px}
+  .tramo ul{margin:0; padding-left:18px; font-size:14.5px; color:#4a463d}
+  .tramo li{margin:3px 0}
+
+  /* WHY */
+  .why{background:linear-gradient(180deg,#fffdf9,#fbf4e8); border:1px solid var(--line);
+    border-left:4px solid var(--gold); border-radius:14px; padding:18px 20px; margin-top:24px}
+  .why b{color:var(--teal-d)}
+
+  /* TIMELINE */
+  .tl{margin-top:30px; position:relative}
+  .tl:before{content:""; position:absolute; left:26px; top:6px; bottom:6px; width:2px; background:var(--line)}
+  .day{position:relative; padding:0 0 22px 64px}
+  .day .dot{position:absolute; left:16px; top:2px; width:22px; height:22px; border-radius:50%;
+    background:var(--card); border:3px solid var(--teal); display:grid; place-items:center; font-size:11px}
+  .day.mine .dot{border-color:var(--rust)} .day.cave .dot{border-color:var(--gold)}
+  .day.transfer .dot{border-color:var(--muted)}
+  .day .date{font-size:12px; font-weight:600; letter-spacing:.04em; color:var(--rust); text-transform:uppercase}
+  .day h4{margin:2px 0 4px; font-family:'Fraunces',serif; font-size:18px}
+  .day p{margin:0; font-size:14.5px; color:#4a463d}
+  .day .sleep{display:inline-block; margin-top:7px; font-size:12.5px; color:var(--teal-d);
+    background:#e8f3ef; border-radius:999px; padding:3px 11px}
+  .day .sleep.q{background:#f3ead9; color:#8a5a12}
+
+  /* DECISION */
+  .decision{background:var(--teal-d); color:#fff; border-radius:22px; padding:30px 24px; margin-top:14px;
+    box-shadow:var(--shadow)}
+  .decision .eyebrow{color:#ffd789}
+  .decision h2{color:#fff}
+  .decision .lead{color:rgba(255,255,255,.82)}
+  .opts{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px}
+  .opt{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16); border-radius:16px; padding:18px; position:relative}
+  .opt .badge{font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px}
+  .opt .badge.par{background:#ffe1a6; color:#5e4109}
+  .opt .badge.sur{background:#ffd0bd; color:#7a2c10}
+  .opt h3{color:#fff; font-size:20px; margin:12px 0 2px}
+  .opt .place{font-size:13px; color:rgba(255,255,255,.7); margin-bottom:10px}
+  .opt p{font-size:14px; color:rgba(255,255,255,.9); margin:8px 0}
+  .opt .meta{display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:12.5px; color:rgba(255,255,255,.78)}
+  .opt .meta b{color:#ffe1a6; font-weight:600}
+  .opt .star{position:absolute; top:14px; right:14px; font-size:16px}
+  .opt .warn{margin-top:10px; font-size:12.5px; color:#ffd0bd}
+  .vote{margin-top:22px; text-align:center; font-size:15px; color:#fff}
+  .vote a{color:#ffe1a6; font-weight:600}
+
+  /* TABLE */
+  .tbl{width:100%; border-collapse:collapse; margin-top:22px; background:var(--card); border-radius:14px; overflow:hidden; box-shadow:var(--shadow)}
+  .tbl th,.tbl td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); font-size:14px}
+  .tbl th{background:#f3ebdd; font-family:'Inter'; font-weight:600; font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted)}
+  .tbl tr:last-child td{border-bottom:0}
+  .st{font-size:12px; font-weight:600; padding:3px 9px; border-radius:999px}
+  .st.ok{background:#e1f0e6; color:#1d6b3f} .st.todo{background:#fde7df; color:#a8431f}
+
+  /* TICKETS */
+  .tix{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px}
+  .tix div{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; font-size:14px}
+  .tix b{display:block; font-family:'Fraunces',serif; font-size:15px; margin-bottom:2px}
+
+  /* COMMENTS */
+  .comments{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; margin-top:14px; box-shadow:var(--shadow)}
+  .comments .hi{font-size:15px; color:#4a463d; margin-bottom:18px}
+
+  footer{text-align:center; padding:40px 20px 60px; color:var(--muted); font-size:13px}
+  footer .heart{color:var(--rust)}
+
+  @media (max-width:640px){
+    .tramos,.opts,.tix{grid-template-columns:1fr}
+    .day{padding-left:56px}
+    .hero .sun{width:46px; height:46px; top:20px; right:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="sun"></div>
+  <div class="kicker">Vacaciones de verano · 2026</div>
+  <h1>De las dunas de <em>Doñana</em><br>al verde de <em>Suances</em></h1>
+  <div class="dates">31 julio → 14 agosto · road trip por el oeste y subida al norte</div>
+  <div class="who"><span>🧳 Sergio</span><span>🧳 Julia</span><span>🧒 Leónidas</span></div>
+</header>
+
+<main class="wrap">
+
+  <!-- VISTA GENERAL -->
+  <section>
+    <div class="eyebrow">El viaje de un vistazo</div>
+    <h2>Dos viajes encadenados</h2>
+    <p class="lead">Primero ocho días por Huelva los tres, terminando con una subida tranquila hacia el norte. Después, semana en familia en Suances.</p>
+
+    <div class="tramos">
+      <div class="tramo t1">
+        <span class="tag">Tramo 1 · 31 jul → 7 ago</span>
+        <h3>Huelva + road trip</h3>
+        <div class="sub">Sergio, Julia y Leónidas</div>
+        <ul>
+          <li>4 noches de playa en Mazagón</li>
+          <li>3 noches de marisma y Doñana</li>
+          <li>1 noche de transición subiendo al norte</li>
+        </ul>
+      </div>
+      <div class="tramo t2">
+        <span class="tag">Tramo 2 · 8 → 14 ago</span>
+        <h3>Suances en familia</h3>
+        <div class="sub">Alojamiento ya reservado</div>
+        <ul>
+          <li>Casa en Suances (Cantabria)</li>
+          <li>Semana con la familia</li>
+          <li><a href="https://www.airbnb.es/rooms/44985437" target="_blank" rel="noopener">Ver alojamiento ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="why">
+      <b>Por qué este plan.</b> En agosto, lo que se llena en Huelva no es “el este o el oeste”, sino lo urbanizado.
+      El oeste (Punta Umbría, Isla Cristina) está saturado; en cambio el frente protegido de Doñana
+      (<b>Cuesta Maneli / Playa de Castilla</b>) se mantiene casi vacío. Por eso concentramos todo ahí,
+      hacemos la playa en el arenal virgen y dejamos Matalascañas al margen.
+    </div>
+  </section>
+
+  <!-- DÍA A DÍA -->
+  <section>
+    <div class="eyebrow">Día a día</div>
+    <h2>El recorrido</h2>
+
+    <div class="tl">
+      <div class="day"><div class="dot">🚗</div>
+        <div class="date">Vie · 31 jul</div>
+        <h4>Madrid → Mazagón</h4>
+        <p>~6 h de viaje. Tarde suave: piscina y playa de Mazagón.</p>
+        <span class="sleep">Albaida Nature · Mazagón</span>
+      </div>
+      <div class="day"><div class="dot">🏖️</div>
+        <div class="date">Sáb · 1 ago</div>
+        <h4>Playa virgen de Cuesta Maneli</h4>
+        <p>Pasarela sobre los acantilados del Asperillo y dunas. Sin servicios: ir temprano y llevar agua y sombra.</p>
+        <span class="sleep">Albaida Nature · Mazagón</span>
+      </div>
+      <div class="day"><div class="dot">⛵</div>
+        <div class="date">Dom · 2 ago</div>
+        <h4>Barco a la Flecha del Rompido</h4>
+        <p>La playa desierta de verdad, una lengua de arena a la que solo se llega en barco.</p>
+        <span class="sleep">Albaida Nature · Mazagón</span>
+      </div>
+      <div class="day"><div class="dot">⛵</div>
+        <div class="date">Lun · 3 ago</div>
+        <h4>Lugares Colombinos</h4>
+        <p>Muelle de las Carabelas (te subes a las réplicas), La Rábida y Moguer. Tarde de playa.</p>
+        <span class="sleep">Albaida Nature · Mazagón</span>
+      </div>
+      <div class="day transfer"><div class="dot">🦩</div>
+        <div class="date">Mar · 4 ago</div>
+        <h4>Mañana de playa → traslado a Doñana</h4>
+        <p>Check-out y ~1 h hasta la marisma. Tarde de piscina y primer atardecer de aves.</p>
+        <span class="sleep">Ardea Purpurea · Villamanrique</span>
+      </div>
+      <div class="day"><div class="dot">🦌</div>
+        <div class="date">Mié · 5 ago</div>
+        <h4>Doñana en 4×4</h4>
+        <p>Ruta norte desde El Rocío + Palacio del Acebrón + la aldea de El Rocío.</p>
+        <span class="sleep">Ardea Purpurea · Villamanrique</span>
+      </div>
+      <div class="day mine"><div class="dot">⛏️</div>
+        <div class="date">Jue · 6 ago</div>
+        <h4>Minas de Riotinto</h4>
+        <p>Tren minero junto al río rojo y mina Peña de Hierro. Vuelta a la marisma para la <b>última cena tranquila</b>.</p>
+        <span class="sleep">Ardea Purpurea · Villamanrique</span>
+      </div>
+      <div class="day cave"><div class="dot">💎</div>
+        <div class="date">Vie · 7 ago</div>
+        <h4>Sierra de Aracena → norte</h4>
+        <p>Gruta de las Maravillas y almuerzo de jamón en Jabugo. Por la tarde subimos hacia la noche de transición.</p>
+        <span class="sleep q">Noche por decidir 👇</span>
+      </div>
+      <div class="day transfer"><div class="dot">🏔️</div>
+        <div class="date">Sáb · 8 ago</div>
+        <h4>Llegada a Suances</h4>
+        <p>Última etapa hasta Cantabria. Empieza la semana en familia (8–14 ago).</p>
+        <span class="sleep q">Casa de Suances</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DECISIÓN -->
+  <section>
+    <div class="decision">
+      <div class="eyebrow">Te toca elegir, Julia</div>
+      <h2>¿Dónde dormimos la noche del 7?</h2>
+      <p class="lead">La parada a mitad de camino entre Andalucía y Cantabria. Tres paradores y una sorpresa.
+      El día 7 ya lleva la Gruta de Aracena por la mañana, así que lo cómodo son ~4 h de coche esa tarde.</p>
+
+      <div class="opts">
+        <div class="opt"><span class="star">⭐</span>
+          <span class="badge par">Parador</span>
+          <h3>Ciudad Rodrigo</h3>
+          <div class="place">Salamanca · castillo del s. XIV</div>
+          <p>Dormir en un castillo de verdad sobre el río Águeda, en una ciudad amurallada pequeña y tranquila, al lado de la Sierra de Francia.</p>
+          <div class="meta"><span>🛏️ Parador con alma</span><span>🚗 Día 8: <b>~4 h 15</b></span></div>
+        </div>
+
+        <div class="opt">
+          <span class="badge par">Parador</span>
+          <h3>Salamanca</h3>
+          <div class="place">En plena ruta · ciudad monumental</div>
+          <p>Parador moderno con vistas a la ciudad. Atardecer paseando la Plaza Mayor y la catedral — un planazo con Leónidas.</p>
+          <div class="meta"><span>🌆 Ciudad + paseo</span><span>🚗 Día 8: <b>~3 h 45</b></span></div>
+        </div>
+
+        <div class="opt">
+          <span class="badge par">Parador</span>
+          <h3>Puebla de Sanabria</h3>
+          <div class="place">Zamora · pueblo medieval + lago glaciar</div>
+          <p>Castillo medieval y el mayor lago glaciar de Iberia para bañarse. El parador tiene jardín, piscina y zona de juegos infantil.</p>
+          <div class="meta"><span>🏞️ Baño en el lago</span><span>🚗 Día 8: <b>~3 h 30</b></span></div>
+          <div class="warn">⚠ Queda más al norte: ese día 7 son ~5 h de coche, así que habría que hacer la Gruta más rápida.</div>
+        </div>
+
+        <div class="opt">
+          <span class="badge sur">Sorpresa</span>
+          <h3>Hotel burbuja</h3>
+          <div class="place">Sierra de Francia · dormir bajo las estrellas</div>
+          <p>Una burbuja/domo con techo transparente para ver las estrellas desde la cama, en un cielo sin contaminación lumínica. Inolvidable para Leónidas.</p>
+          <div class="meta"><span>✨ Lo más original</span><span>🚗 Día 8: <b>~4 h</b></span></div>
+        </div>
+      </div>
+
+      <div class="vote">👉 Julia, dinos cuál te gusta más (o propón otra) en los <a href="#comentarios">comentarios de abajo</a>.</div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section>
+    <div class="eyebrow">Estado de las reservas</div>
+    <h2>Qué falta por cerrar</h2>
+    <table class="tbl">
+      <thead><tr><th>Alojamiento</th><th>Fechas</th><th>Noches</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Albaida Nature · Mazagón</td><td>31 jul → 4 ago</td><td>4</td><td><span class="st todo">Por reservar</span></td></tr>
+        <tr><td>Ardea Purpurea · Villamanrique</td><td>4 → 7 ago</td><td>3</td><td><span class="st todo">Por reservar</span></td></tr>
+        <tr><td>Noche de transición</td><td>7 → 8 ago</td><td>1</td><td><span class="st todo">A elegir 👆</span></td></tr>
+        <tr><td>Casa de Suances</td><td>8 → 14 ago</td><td>6</td><td><span class="st ok">Reservado</span></td></tr>
+      </tbody>
+    </table>
+    <p class="lead" style="margin-top:14px">Consejo: reservar Albaida y Ardea en <b>tarifa reembolsable</b> mientras decidimos la noche del 7. Filtrar siempre <b>2 adultos + 1 niño</b>.</p>
+  </section>
+
+  <!-- ENTRADAS -->
+  <section>
+    <div class="eyebrow">No olvidar</div>
+    <h2>Entradas a sacar online</h2>
+    <div class="tix">
+      <div><b>Parque Minero de Riotinto</b>Tren minero + Peña de Hierro (día 6)</div>
+      <div><b>Doñana en 4×4</b>Ruta norte desde El Rocío (día 5)</div>
+      <div><b>Barco a la Flecha del Rompido</b>Confirmar horario según marea (día 2)</div>
+      <div><b>Gruta de las Maravillas</b>Visita guiada en Aracena (día 7)</div>
+    </div>
+  </section>
+
+  <!-- COMENTARIOS -->
+  <section id="comentarios">
+    <div class="eyebrow">Vuestro rincón</div>
+    <h2>Comentarios</h2>
+    <div class="comments">
+      <p class="hi">¡Hola, Julia! 💬 Aquí puedes dejar lo que quieras: tu voto para la noche del 7, cambios, ideas o lo que te apetezca.
+      Para escribir solo tienes que iniciar sesión con una cuenta de GitHub (es gratis y rápido).</p>
+      <!-- GISCUS_START -->
+      <script src="https://giscus.app/client.js"
+        data-repo="GISCUS_REPO"
+        data-repo-id="GISCUS_REPO_ID"
+        data-category="GISCUS_CATEGORY"
+        data-category-id="GISCUS_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+      </script>
+      <!-- GISCUS_END -->
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Hecho con <span class="heart">♥</span> para planear el verano · actualizado en junio de 2026<br>
+  Las opciones y horarios son orientativos; las distancias, aproximadas.
+</footer>
+
+</body>
+</html>
